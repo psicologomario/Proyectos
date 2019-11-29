@@ -1,0 +1,119 @@
+/*diseño de primer fondo*/
+body{
+    background: rgb(231, 206, 174);
+}
+/*diseño de segundo fondo*/
+.proyect{
+    display: block;
+    margin: 0 auto;
+    padding:1em;
+    width: 95%;
+    border: 10px solid darkslategrey;
+    border-style: groove ;
+}
+/*titulo de contenido*/
+.proyect >h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2em;
+    color: rgb(150, 148, 148);
+    text-shadow: 0 0 5px navy, 0 0 1em DARKRED;
+
+}
+.proyect > h2{
+    color: saddlebrown;
+    text-shadow: 0 0 3px slategrey;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+/*Lista de contenido*/
+.proyect-a{
+    display: flex;
+    list-style:none;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    background: DARKKHAKI;
+}
+.proyect-a li{
+    display: flex;
+    letter-spacing: 5px;
+}
+/*sobre los articulos*/
+.proyect article{
+background: cornsilk;
+display: inline-flex;
+margin: auto;
+flex-direction: column;
+width: 45.5%;
+margin: 10px;
+padding: 10px;
+}
+.proyect-but{
+    display: flex;
+    text-decoration: none;
+    color: maroon;
+    font-style: oblique;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/*para los botanes de contacto inicial*/
+.but{
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+    text-decoration: none;
+    color: DARKSLATEBLUE;
+    font-size: 14pt;
+    font-style: oblique;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.but:hover{
+    background: MEDIUMSLATEBLUE;
+    color: mintcream;
+
+}
+/* Float Shadow */
+.hvr-float-shadow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  .hvr-float-shadow:before {
+    pointer-events: none;
+    position: absolute;
+    z-index: -1;
+    content: '';
+    top: 100%;
+    left: 5%;
+    height: 10px;
+    width: 90%;
+    opacity: 0;
+    background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    /* W3C */
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform, opacity;
+    transition-property: transform, opacity;
+  }
+  .hvr-float-shadow:hover, .hvr-float-shadow:focus, .hvr-float-shadow:active {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    /* move the element up by 5px */
+  }
+  .hvr-float-shadow:hover:before, .hvr-float-shadow:focus:before, .hvr-float-shadow:active:before {
+    opacity: 1;
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+    /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+  }
